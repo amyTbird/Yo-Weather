@@ -1,0 +1,106 @@
+@font-face{
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100vh;
+    margin: 0px;
+    font-family: Raleway;
+}
+
+.wrapper {
+    color: white;
+    margin: 0;
+    height: 100%;
+    background-image: url(../img/Cloud1.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.top-bar {
+    background-color: rgba(48,48,48,0.4);
+    
+}
+.top-bar > #city-name, #temp {
+    margin: 0;
+    padding: 2% 5% 0 5%;
+    display: inline-block;
+    font-size: 7vw;
+}
+
+.location{
+    margin: 0;
+    padding: 0 5% 2% 5%;
+}
+.location > h4 {
+    display: inline-block;
+    margin-right: 2%;
+}
+.location > input {
+    display: inline-block;
+    color: black;
+    width: 33%;
+    height: 5%;
+    font-size: 4.5vw;
+    margin-right: 2%;
+}
+.location > #button {
+    font-size: 4vw;
+    display: inline-block;
+    color: black;
+    margin: 0;
+}
+
+.center-block {
+    padding: 0 4%;
+    text-align: center;
+    margin: 20% 0;
+    
+}
+.center-block h1 {
+    font-size: 40vw;
+    margin: 0;
+    color: #363B49;
+}
+.center-block h2 {
+    font-size: 7vw;
+}
+
+
+.bottom-block {
+    background-color: rgba(48,48,48,0.4);
+    display: grid;
+    padding: 0 6%;
+    grid-gap: 5vw;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "a b"
+                         "c d";
+    
+}
+
+.info > h3 {
+    padding: 0 10%;
+    margin: 1.1em 0 0 0;
+    font-size: 5vw;
+    
+}
+
+.info p {
+    padding: 0 10%;
+    margin: 0.5em 0 0 0;
+    font-size: 5.4vw;
+}
+
+.info1{grid-area: a}
+.info2{grid-area: b}
+.info3{grid-area: c}
+.info4{grid-area: d}
+
+
+
+

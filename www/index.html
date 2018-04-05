@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+        width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Yo Weather</title>
+        
+        <link rel="stylesheet" href="css/icon.css">
+        <link rel="stylesheet" href="css/weather-icons.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        
+        <div data-role="layout" data-id="default">
+            <div class="wrapper">
+                
+
+                <header data-role="header">
+                    <div class="top-bar">
+        <!--                <h1>Lethbridge -0&#176;c</h1>-->
+                        <div id="city-name">Lethbridge </div> 
+                        <div id="temp"></div>
+                        <div class="drawer glyphicon glyphicon-map-marker"></div>
+                        <div class="location">
+                            <h4>Change Location</h4>
+                            <input type="text" name="textbox" placeholder="City">
+                            <button id="button">Go</button>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="center-block">
+                    <div class="image">
+                        <h1><i id="cloudy" class="wi wi-day-cloudy"></i></h1>
+                    </div>
+
+                    <div class="image-cap">
+                        <h2 id="description" class="desc"></h2>
+                    </div>
+                </div>
+
+                <footer data-role="footer">
+                    <div class="bottom-block">
+                        <div class="info info1">
+                            <h3>Max-Temperature:</h3> 
+                            <p id="maxtemp"></p>
+                        </div>
+                        <div class="info info2">
+                            <h3>Min-Temperature:</h3> 
+                            <p id="mintemp"></p>
+                        </div>
+                        <div class="info info3">
+                            <h3>Wind: </h3> 
+                            <p id="wind"></p>
+                        </div>
+                        <div class="info info4">
+                            <h3>Humidity:</h3> 
+                            <p id="humidity"></p>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+         
+        
+        <script src="text/javascript" src="js/jquery.min.js"></script>
+        
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/kendo.ui.core.min.js"></script>
+        <script>
+            var app = new kendo.mobile.Application();
+        </script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>  
+        
+        <script type="text/javascript" src="js/weatherapp.js"></script>
+    </body>
+</html>
